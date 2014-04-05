@@ -6,12 +6,7 @@
 package dblp.xml;
 
 import java.io.BufferedWriter;
-import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.DocumentBuilder;
-import org.w3c.dom.Document;
-import org.w3c.dom.NodeList;
-import org.w3c.dom.Node;
-import org.w3c.dom.Element;
+
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -20,7 +15,12 @@ import java.io.Writer;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import org.w3c.dom.DOMException;
+import org.jdom2.Content;
+import org.jdom2.Document;
+import org.jdom2.Element;
+import org.jdom2.JDOMException;
+import org.jdom2.input.SAXBuilder;
+import org.jdom2.util.IteratorIterable;
 
 public class DBLPParser {
 
@@ -35,17 +35,16 @@ public class DBLPParser {
     public static void main(String argv[]) {
 
         try {
-            File fXmlFile = new File("data/dblp2.xml");
-            DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
-            DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
-            Document doc = dBuilder.parse(fXmlFile);
 
-            doc.getDocumentElement().normalize();
+            SAXBuilder builder = new SAXBuilder();
+            String path = "data/dblp2.xml";
+            Document jdomDocument = builder.build(path);
+            Element root = jdomDocument.getRootElement();
 
-            // List<String> types = Arrays.asList("incollection", "article", "inproceedings", "proceedings");
-            List<String> types = Arrays.asList("incollection");
+//            List<String> types = Arrays.asList("incollection", "article", "inproceedings", "proceedings");
+            List<String> types = Arrays.asList("inproceedings");
             for (String type : types) {
-                extractElements(doc, type);
+                extractElements(root, type);
             }
             titlesCollection.writeToFile("data/output/title.txt");
             authorsCollection.writeToFile("data/output/author.txt");
@@ -60,31 +59,33 @@ public class DBLPParser {
         }
     }
 
-    private static void extractElements(Document doc, final String type) throws DOMException {
+    private static void extractElements(Element root, final String type) {
         //            System.out.println("Root element :" + doc.getDocumentElement().getNodeName());
-        NodeList nList = doc.getElementsByTagName(type);
-        System.out.println(type + " " + nList.getLength());
-        for (int temp = 0; temp < nList.getLength(); temp++) {
-            Node nNode = nList.item(temp);
-            if (nNode.getNodeType() == Node.ELEMENT_NODE) {
-                Element eElement = (Element) nNode;
-                String title = eElement.getElementsByTagName("title").item(0).getTextContent();
-                int titleId = titlesCollection.put(title);
-                String year = eElement.getElementsByTagName("year").item(0).getTextContent();
-                int yearId = yearsCollection.put(year);
-                String booktitle = eElement.getElementsByTagName("booktitle").item(0).getTextContent();
-                int confId = confsCollection.put(booktitle);
-                title_conf.add(new Edge(titleId, confId));
+        List<Element> nList = root.getChildren(type);
+//        System.out.println(nList);
+        System.out.println(type + " " + nList.size());
+        int index = 0;
+        for (Element eElement : nList) {
+            index++;
+            if (index % 100 == 0) {
+                System.out.println("Node#: " + index);
+            }
+            String title = eElement.getChild("title").getText();
+            int titleId = titlesCollection.put(title);
+            String year = eElement.getChild("year").getText();
+            int yearId = yearsCollection.put(year);
+            String booktitle = eElement.getChild("booktitle").getText();
+            int confId = confsCollection.put(booktitle);
+            title_conf.add(new Edge(titleId, confId));
 //                title_conf.add(new Edge(confId, titleId));
-                title_year.add(new Edge(titleId, yearId));
+            title_year.add(new Edge(titleId, yearId));
 //                title_year.add(new Edge(yearId, titleId));
-                final NodeList authors = eElement.getElementsByTagName("author");
-                for (int i = 0; i < authors.getLength(); i++) {
-                    String author_str = authors.item(i).getTextContent();
-                    int authorId = authorsCollection.put(author_str);
-                    title_author.add(new Edge(titleId, authorId));
+            final List<Element> authors = eElement.getChildren("author");
+            for (Element author : authors) {
+                String author_str = author.getText();
+                int authorId = authorsCollection.put(author_str);
+                title_author.add(new Edge(titleId, authorId));
 //                    title_author.add(new Edge(authorId, authorId));
-                }
             }
         }
     }

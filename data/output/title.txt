@@ -1,4 +1,3 @@
-11 Schema Architecture of the UniSQL/M Multidatabase System
 10 Cooperative Transactions for Multiuser Environments.
 9 An Object-Oriented DBMS War Story: Developing a Genome Mapping Database in C++.
 8 Distributed Databases.

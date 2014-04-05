@@ -1,25 +1,21 @@
-25 Bruce Graham
-12 Stavros Christodoulakis
-11 Tom C. Reyes
-10 Abraham Silberschatz
-9 Hector Garcia-Molina
-8 Yuri Breitbart
-7 José A. Blakeley
-6 William Kent
-5 Michael L. Heytens
-4 Daniel H. Fishman
-3 Amelia Carlson
-2 Rafiul Ahad
-1 Jurgen Annevelink
-13 Leonidas Koveos
-14 Umeshwar Dayal
-15 Eric N. Hanson
-16 Jennifer Widom
-17 Angelika Kotz Dittrich
-18 Klaus R. Dittrich
-19 Meichun Hsu
-20 Nathan Goodman
 21 Gail E. Kaiser
-22 William Kelley
-23 Sunit K. Gala
-24 Won Kim
+20 Nathan Goodman
+19 Meichun Hsu
+18 Klaus R. Dittrich
+17 Angelika Kotz Dittrich
+16 Jennifer Widom
+15 Eric N. Hanson
+14 Umeshwar Dayal
+13 Leonidas Koveos
+1 Jurgen Annevelink
+2 Rafiul Ahad
+3 Amelia Carlson
+4 Daniel H. Fishman
+5 Michael L. Heytens
+6 William Kent
+7 José A. Blakeley
+8 Yuri Breitbart
+9 Hector Garcia-Molina
+10 Abraham Silberschatz
+11 Tom C. Reyes
+12 Stavros Christodoulakis

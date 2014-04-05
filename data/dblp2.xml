@@ -166,18 +166,5 @@
 <booktitle>Modern Database Systems</booktitle>
 <url>db/books/collections/kim95.html#Kaiser95</url>
 </incollection>
-<incollection mdate="2004-03-08" key="books/acm/kim95/KelleyGKRG95">
-<author>William Kelley</author>
-<author>Sunit K. Gala</author>
-<author>Won Kim</author>
-<author>Tom C. Reyes</author>
-<author>Bruce Graham</author>
-<title>Schema Architecture of the UniSQL/M Multidatabase System</title>
-<booktitle>Modern Database Systems</booktitle>
-<crossref>books/acm/Kim95</crossref>
-<pages>621-648</pages>
-<year>1995</year>
-<url>db/books/collections/kim95.html#KelleyGKRG95</url>
-</incollection>
 
 </dblp>
