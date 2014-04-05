@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE dblp [
+<!ENTITY reg   "&#174;">
+<!ENTITY micro "&#181;">
+<!ENTITY times "&#215;">
+    <!ENTITY Agrave  "&#192;" >
+    <!ENTITY Aacute  "&#193;" >
+    <!ENTITY Acirc   "&#194;" >
+    <!ENTITY Atilde  "&#195;" >
+    <!ENTITY Auml    "&#196;" >
+    <!ENTITY Aring   "&#197;" >
+    <!ENTITY AElig   "&#198;" ><!-- capital AE diphthong (ligature) -->
+    <!ENTITY Ccedil  "&#199;" ><!-- capital C, cedilla -->
+    <!ENTITY Egrave  "&#200;" ><!-- capital E, grave accent -->
+    <!ENTITY Eacute  "&#201;" ><!-- capital E, acute accent -->
+    <!ENTITY Ecirc   "&#202;" ><!-- capital E, circumflex accent -->
+    <!ENTITY Euml    "&#203;" ><!-- capital E, dieresis or umlaut mark -->
+    <!ENTITY Igrave  "&#204;" ><!-- capital I, grave accent -->
+    <!ENTITY Iacute  "&#205;" ><!-- capital I, acute accent -->
+    <!ENTITY Icirc   "&#206;" ><!-- capital I, circumflex accent -->
+    <!ENTITY Iuml    "&#207;" ><!-- capital I, dieresis or umlaut mark -->
+    <!ENTITY ETH     "&#208;" ><!-- capital Eth, Icelandic -->
+    <!ENTITY Ntilde  "&#209;" ><!-- capital N, tilde -->
+    <!ENTITY Ograve  "&#210;" ><!-- capital O, grave accent -->
+    <!ENTITY Oacute  "&#211;" ><!-- capital O, acute accent -->
+    <!ENTITY Ocirc   "&#212;" ><!-- capital O, circumflex accent -->
+    <!ENTITY Otilde  "&#213;" ><!-- capital O, tilde -->
+    <!ENTITY Ouml    "&#214;" ><!-- capital O, dieresis or umlaut mark -->
+    <!ENTITY Oslash  "&#216;" ><!-- capital O, slash -->
+    <!ENTITY Ugrave  "&#217;" ><!-- capital U, grave accent -->
+    <!ENTITY Uacute  "&#218;" ><!-- capital U, acute accent -->
+    <!ENTITY Ucirc   "&#219;" ><!-- capital U, circumflex accent -->
+    <!ENTITY Uuml    "&#220;" ><!-- capital U, dieresis or umlaut mark -->
+    <!ENTITY Yacute  "&#221;" ><!-- capital Y, acute accent -->
+    <!ENTITY THORN   "&#222;" ><!-- capital THORN, Icelandic -->
+    <!ENTITY szlig   "&#223;" ><!-- small sharp s, German (sz ligature) -->
+    <!ENTITY agrave  "&#224;" ><!-- small a, grave accent -->   
+    <!ENTITY aacute  "&#225;" ><!-- small a, acute accent -->
+    <!ENTITY acirc   "&#226;" ><!-- small a, circumflex accent -->
+    <!ENTITY atilde  "&#227;" ><!-- small a, tilde -->
+    <!ENTITY auml    "&#228;" ><!-- small a, dieresis or umlaut mark -->
+    <!ENTITY aring   "&#229;" ><!-- small a, ring -->
+    <!ENTITY aelig   "&#230;" ><!-- small ae diphthong (ligature) -->
+    <!ENTITY ccedil  "&#231;" ><!-- small c, cedilla -->
+    <!ENTITY egrave  "&#232;" ><!-- small e, grave accent -->
+    <!ENTITY eacute  "&#233;" ><!-- small e, acute accent -->
+    <!ENTITY ecirc   "&#234;" ><!-- small e, circumflex accent -->
+    <!ENTITY euml    "&#235;" ><!-- small e, dieresis or umlaut mark -->
+    <!ENTITY igrave  "&#236;" ><!-- small i, grave accent -->
+    <!ENTITY iacute  "&#237;" ><!-- small i, acute accent -->
+    <!ENTITY icirc   "&#238;" ><!-- small i, circumflex accent -->
+    <!ENTITY iuml    "&#239;" ><!-- small i, dieresis or umlaut mark -->
+    <!ENTITY eth     "&#240;" ><!-- small eth, Icelandic -->
+    <!ENTITY ntilde  "&#241;" ><!-- small n, tilde -->
+    <!ENTITY ograve  "&#242;" ><!-- small o, grave accent -->
+    <!ENTITY oacute  "&#243;" ><!-- small o, acute accent -->
+    <!ENTITY ocirc   "&#244;" ><!-- small o, circumflex accent -->
+    <!ENTITY otilde  "&#245;" ><!-- small o, tilde -->
+    <!ENTITY ouml    "&#246;" ><!-- small o, dieresis or umlaut mark -->
+    <!ENTITY oslash  "&#248;" ><!-- small o, slash -->
+    <!ENTITY ugrave  "&#249;" ><!-- small u, grave accent -->
+    <!ENTITY uacute  "&#250;" ><!-- small u, acute accent -->
+    <!ENTITY ucirc   "&#251;" ><!-- small u, circumflex accent -->
+    <!ENTITY uuml    "&#252;" ><!-- small u, dieresis or umlaut mark -->
+    <!ENTITY yacute  "&#253;" ><!-- small y, acute accent -->
+    <!ENTITY thorn   "&#254;" ><!-- small thorn, Icelandic -->
+    <!ENTITY yuml    "&#255;" ><!-- small y, dieresis or umlaut mark -->
+]>
+<dblp>
+<incollection mdate="2002-01-03" key="books/acm/kim95/AnnevelinkACFHK95">
+<author>Jurgen Annevelink</author>
+<author>Rafiul Ahad</author>
+<author>Amelia Carlson</author>
+<author>Daniel H. Fishman</author>
+<author>Michael L. Heytens</author>
+<author>William Kent</author>
+<title>Object SQL - A Language for the Design and Implementation of Object Databases.</title>
+<pages>42-68</pages>
+<year>1995</year>
+<booktitle>Modern Database Systems</booktitle>
+<url>db/books/collections/kim95.html#AnnevelinkACFHK95</url>
+</incollection>
+<incollection mdate="2002-01-03" key="books/acm/kim95/Blakeley95">
+<author>Jos&eacute; A. Blakeley</author>
+<title>OQL[C++]: Extending C++ with an Object Query Capability.</title>
+<pages>69-88</pages>
+<booktitle>Modern Database Systems</booktitle>
+<url>db/books/collections/kim95.html#Blakeley95</url>
+<year>1995</year>
+</incollection>
+<incollection mdate="2004-03-08" key="books/acm/kim95/BreitbartGS95">
+<author>Yuri Breitbart</author>
+<author>Hector Garcia-Molina</author>
+<author>Abraham Silberschatz</author>
+<title>Transaction Management in Multidatabase Systems.</title>
+<pages>573-591</pages>
+<booktitle>Modern Database Systems</booktitle>
+<crossref>books/acm/Kim95</crossref>
+<url>db/books/collections/kim95.html#BreitbartGS95</url>
+<year>1995</year>
+</incollection>
+
+
+<incollection mdate="2004-03-08" key="books/acm/kim95/BreitbartR95">
+<author>Yuri Breitbart</author>
+<author>Tom C. Reyes</author>
+<title>Overview of the ADDS System.</title>
+<pages>683-701</pages>
+<booktitle>Modern Database Systems</booktitle>
+<crossref>books/acm/Kim95</crossref>
+<url>db/books/collections/kim95.html#BreitbartR95</url>
+<year>1995</year>
+</incollection>
+
+
+<incollection mdate="2002-01-03" key="books/acm/kim95/ChristodoulakisK95">
+<author>Stavros Christodoulakis</author>
+<author>Leonidas Koveos</author>
+<title>Multimedia Information Systems: Issues and Approaches.</title>
+<pages>318-337</pages>
+<year>1995</year>
+<booktitle>Modern Database Systems</booktitle>
+<url>db/books/collections/kim95.html#ChristodoulakisK95</url>
+</incollection>
+<incollection mdate="2002-01-03" key="books/acm/kim95/DayalHW95">
+<author>Umeshwar Dayal</author>
+<author>Eric N. Hanson</author>
+<author>Jennifer Widom</author>
+<title>Active Database Systems.</title>
+<pages>434-456</pages>
+<year>1995</year>
+<booktitle>Modern Database Systems</booktitle>
+<url>db/books/collections/kim95.html#DayalHW95</url>
+</incollection>
+<incollection mdate="2002-01-03" key="books/acm/kim95/DittrichD95">
+<author>Angelika Kotz Dittrich</author>
+<author>Klaus R. Dittrich</author>
+<title>Where Object-Oriented DBMSs Should Do Better: A Critique Based on Early Experiences.</title>
+<pages>238-254</pages>
+<year>1995</year>
+<booktitle>Modern Database Systems</booktitle>
+<url>db/books/collections/kim95.html#DittrichD95</url>
+</incollection>
+<incollection mdate="2002-01-03" key="books/acm/kim95/Garcia-MolinaH95">
+<author>Hector Garcia-Molina</author>
+<author>Meichun Hsu</author>
+<title>Distributed Databases.</title>
+<pages>477-493</pages>
+<year>1995</year>
+<booktitle>Modern Database Systems</booktitle>
+<url>db/books/collections/kim95.html#Garcia-MolinaH95</url>
+</incollection>
+<incollection mdate="2002-01-03" key="books/acm/kim95/Goodman95">
+<author>Nathan Goodman</author>
+<title>An Object-Oriented DBMS War Story: Developing a Genome Mapping Database in C++.</title>
+<pages>216-237</pages>
+<year>1995</year>
+<booktitle>Modern Database Systems</booktitle>
+<url>db/books/collections/kim95.html#Goodman95</url>
+</incollection>
+<incollection mdate="2002-01-03" key="books/acm/kim95/Kaiser95">
+<author>Gail E. Kaiser</author>
+<title>Cooperative Transactions for Multiuser Environments.</title>
+<pages>409-433</pages>
+<year>1995</year>
+<booktitle>Modern Database Systems</booktitle>
+<url>db/books/collections/kim95.html#Kaiser95</url>
+</incollection>
+<incollection mdate="2004-03-08" key="books/acm/kim95/KelleyGKRG95">
+<author>William Kelley</author>
+<author>Sunit K. Gala</author>
+<author>Won Kim</author>
+<author>Tom C. Reyes</author>
+<author>Bruce Graham</author>
+<title>Schema Architecture of the UniSQL/M Multidatabase System</title>
+<booktitle>Modern Database Systems</booktitle>
+<crossref>books/acm/Kim95</crossref>
+<pages>621-648</pages>
+<year>1995</year>
+<url>db/books/collections/kim95.html#KelleyGKRG95</url>
+</incollection>
+
+</dblp>

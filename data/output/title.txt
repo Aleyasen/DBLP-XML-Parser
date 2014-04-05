@@ -1,0 +1,11 @@
+11 Schema Architecture of the UniSQL/M Multidatabase System
+10 Cooperative Transactions for Multiuser Environments.
+9 An Object-Oriented DBMS War Story: Developing a Genome Mapping Database in C++.
+8 Distributed Databases.
+7 Where Object-Oriented DBMSs Should Do Better: A Critique Based on Early Experiences.
+6 Active Database Systems.
+5 Multimedia Information Systems: Issues and Approaches.
+4 Overview of the ADDS System.
+3 Transaction Management in Multidatabase Systems.
+2 OQL[C++]: Extending C++ with an Object Query Capability.
+1 Object SQL - A Language for the Design and Implementation of Object Databases.
