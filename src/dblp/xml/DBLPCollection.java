@@ -19,50 +19,51 @@ import java.util.Map;
  */
 public class DBLPCollection {
 
-    Map<DBLPNode, Integer> countMap;
     Map<String, Integer> idMap;
 
-    public int size() {
-        return countMap.size();
-    }
-
     public DBLPCollection() {
-        countMap = new HashMap<>();
         idMap = new HashMap<>();
     }
 
-    public int put(String key) {
-        DBLPNode node = null;
+    public int get(String key) {
         if (!idMap.containsKey(key)) {
-            int id = countMap.size() + 1;
-            node = new DBLPNode(id, key);
+            int id = getNextId();
             idMap.put(key, id);
-            countMap.put(node, 0);
-        } else {
-            node = new DBLPNode(idMap.get(key), key);
+            return id;
         }
-        int val = countMap.get(node);
-        countMap.put(node, val + 1);
         return idMap.get(key);
-    }
-
-    public void print() {
-        for (DBLPNode key : countMap.keySet()) {
-            System.out.println(key.id + " " + key.name + " > " + countMap.get(key));
-        }
     }
 
     public void writeToFile(String path) {
         Writer writer = null;
         try {
             writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(path), "utf-8"));
-            for (DBLPNode key : countMap.keySet()) {
-                writer.write(key.id + " " + key.name + "\n");
+            for (String key : idMap.keySet()) {
+                writer.write(idMap.get(key) + " " + key + "\n");
             }
             writer.close();
         } catch (IOException ex) {
             ex.printStackTrace();
         }
     }
+    int lastId = 0;
 
+    private Integer getNextId() {
+        lastId++;
+        return lastId;
+    }
+
+    void writeToFileJustFirsToken(String path) {
+        Writer writer = null;
+        try {
+            writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(path), "utf-8"));
+            for (String key : idMap.keySet()) {
+                String firstToken = key.split("\\s+")[0];
+                writer.write(idMap.get(key) + " " + firstToken + "\n");
+            }
+            writer.close();
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
+    }
 }
