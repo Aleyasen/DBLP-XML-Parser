@@ -7,6 +7,7 @@ package dblp.xml;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
@@ -83,6 +84,7 @@ public class DBLPParserSchema {
                 break;
             }
             topAuthors.add(key);
+            System.out.println(key + " " + pubCount.get(key));
             index++;
         }
         return topAuthors;
@@ -90,13 +92,15 @@ public class DBLPParserSchema {
 
     public List<Integer> getNeighbourEntities(List<Integer> nodes, List<Edge> edges, int neighbourColumn) {
         Set<Integer> other = new HashSet<>();
+        Set<Integer> nodesSet = new HashSet<>();
+        nodesSet.addAll(nodes);
         for (Edge e : edges) {
             if (neighbourColumn == 1) {
-                if (nodes.contains(e.node1)) {
+                if (nodesSet.contains(e.node1)) {
                     other.add(e.node2);
                 }
             } else if (neighbourColumn == 0) {
-                if (nodes.contains(e.node2)) {
+                if (nodesSet.contains(e.node2)) {
                     other.add(e.node1);
                 }
             }
@@ -106,10 +110,12 @@ public class DBLPParserSchema {
 
     public void writeNodesToFile(List<Integer> selected, Map<Integer, String> all, String path) {
         Writer writer = null;
+        Set<Integer> selectedSet = new HashSet<>();
+        selectedSet.addAll(selected);
         try {
             writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(path), "utf-8"));
             for (Integer key : all.keySet()) {
-                if (selected.contains(key)) {
+                if (selectedSet.contains(key)) {
                     writer.write(key + " " + all.get(key) + "\n");
                 }
             }
@@ -121,15 +127,17 @@ public class DBLPParserSchema {
 
     public void writeEdgesToFile(List<Integer> selected, List<Edge> all_edges, int columnIndex, String path) {
         Writer writer = null;
+        Set<Integer> selectedSet = new HashSet<>();
+        selectedSet.addAll(selected);
         try {
             writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(path), "utf-8"));
             for (Edge e : all_edges) {
                 if (columnIndex == 0) {
-                    if (selected.contains(e.node1)) {
+                    if (selectedSet.contains(e.node1)) {
                         writer.write(e.node1 + " " + e.node2 + "\n");
                     }
                 } else if (columnIndex == 1) {
-                    if (selected.contains(e.node2)) {
+                    if (selectedSet.contains(e.node2)) {
                         writer.write(e.node1 + " " + e.node2 + "\n");
                     }
                 }
@@ -139,8 +147,21 @@ public class DBLPParserSchema {
             ex.printStackTrace();
         }
     }
+    static int topAuthorCount = 500;
+    static String conf_filter_path = "data/conf.txt";
+    static int year_threshold = 2005;
 
-    static final int topAuthorCount = 2;
+    public static void createDir(String dir) {
+        File theDir = new File(dir);
 
-    
+        // if the directory does not exist, create it
+        if (!theDir.exists()) {
+            System.out.println("creating directory: " + dir);
+            boolean result = theDir.mkdir();
+
+            if (result) {
+                System.out.println("DIR created");
+            }
+        }
+    }
 }

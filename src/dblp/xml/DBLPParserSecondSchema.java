@@ -26,18 +26,15 @@ public class DBLPParserSecondSchema extends DBLPParserSchema {
     static DBLPCollection yearConfsCollection = new DBLPCollection();
     static DBLPCollection confsCollection = new DBLPCollection();
     static DBLPCollection titlesCollection = new DBLPCollection();
-
     static String title_author_path = "data/output2/title_author.txt";
     static String author_conf_path = "data/output2/author_conf.txt";
     static String title_year_path = "data/output2/title_year.txt";
     static String conf_year_path = "data/output2/conf_year.txt";
-
     static final String title_path = "data/output2/title.txt";
     static final String author_path = "data/output2/author.txt";
     static final String conf_path = "data/output2/conf.txt";
     static final String year_with_conf_path = "data/output2/year-with-conf.txt";
     static final String year_path = "data/output2/year.txt";
-
     static Writer title_author_writer;
     static Writer author_conf_writer;
     static Writer title_year_writer;
@@ -53,16 +50,16 @@ public class DBLPParserSecondSchema extends DBLPParserSchema {
 
             title_author_writer = new BufferedWriter(
                     new OutputStreamWriter(
-                            new FileOutputStream(title_author_path), "utf-8"));
+                    new FileOutputStream(title_author_path), "utf-8"));
             author_conf_writer = new BufferedWriter(
                     new OutputStreamWriter(
-                            new FileOutputStream(author_conf_path), "utf-8"));
+                    new FileOutputStream(author_conf_path), "utf-8"));
             title_year_writer = new BufferedWriter(
                     new OutputStreamWriter(
-                            new FileOutputStream(title_year_path), "utf-8"));
+                    new FileOutputStream(title_year_path), "utf-8"));
             conf_year_writer = new BufferedWriter(
                     new OutputStreamWriter(
-                            new FileOutputStream(conf_year_path), "utf-8"));
+                    new FileOutputStream(conf_year_path), "utf-8"));
 
             SAXBuilder builder = new SAXBuilder();
             String path = "data/dblp.xml";

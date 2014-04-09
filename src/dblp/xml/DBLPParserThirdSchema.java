@@ -81,6 +81,7 @@ public class DBLPParserThirdSchema extends DBLPParserSchema {
 
     private static void extractElements(Element root, final String type) {
         try {
+            
             //            System.out.println("Root element :" + doc.getDocumentElement().getNodeName());
             List<Element> nList = root.getChildren(type);
 //        System.out.println(nList);
