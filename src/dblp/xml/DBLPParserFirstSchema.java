@@ -5,7 +5,6 @@
  */
 package dblp.xml;
 
-import static dblp.xml.DBLPParserSchema.topAuthorCount;
 import java.io.BufferedWriter;
 
 import java.io.FileOutputStream;
@@ -42,7 +41,6 @@ public class DBLPParserFirstSchema extends DBLPParserSchema {
     static Writer title_author_writer;
 
     public static void main(String[] args) {
-//        filter();
 //        parse();
         filter2();
 
