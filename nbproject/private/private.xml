@@ -3,7 +3,52 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Data/Dropbox/Development/Java-ws/DBLP-XML-Parser/src/dblp/xml/DBLPParser.java</file>
+            <file>file:/C:/Data/Dropbox/Development/Java-ws/DBLP-XML-Parser/src/dblp/xml/DBLPParserFirstSchema.java</file>
+            <file>file:/C:/Data/Dropbox/Development/Java-ws/DBLP-XML-Parser/src/dblp/xml/DBLPParserSchema.java</file>
+            <file>file:/C:/Data/Dropbox/Development/Java-ws/DBLP-XML-Parser/src/dblp/xml/Edge.java</file>
+            <file>file:/C:/Data/Dropbox/Development/Java-ws/DBLP-XML-Parser/data/output/author.txt</file>
+            <file>file:/C:/Data/Dropbox/Development/Java-ws/DBLP-XML-Parser/src/dblp/xml/MapUtil.java</file>
+            <file>file:/C:/Data/Dropbox/Development/Java-ws/DBLP-XML-Parser/src/dblp/xml/DBLPCollection.java</file>
+            <file>file:/C:/Data/Dropbox/Development/Java-ws/DBLP-XML-Parser/data/output/title_author.txt</file>
+            <file>file:/C:/Data/Dropbox/Development/Java-ws/DBLP-XML-Parser/data/output/title_conf.txt</file>
+            <file>file:/C:/Data/Dropbox/Development/Java-ws/DBLP-XML-Parser/data/output_filter/author.txt</file>
+            <file>file:/C:/Data/Dropbox/Development/Java-ws/DBLP-XML-Parser/data/output_filter/title.txt</file>
+            <file>file:/C:/Data/Dropbox/Development/Java-ws/DBLP-XML-Parser/data/output/title.txt</file>
+            <file>file:/C:/Data/Dropbox/Development/Java-ws/DBLP-XML-Parser/data/output_filter/conf.txt</file>
+            <file>file:/C:/Data/Dropbox/Development/Java-ws/DBLP-XML-Parser/data/output_filter/title_author.txt</file>
+            <file>file:/C:/Data/Dropbox/Development/Java-ws/DBLP-XML-Parser/data/output_filter/title_year.txt</file>
+            <file>file:/C:/Data/Dropbox/Development/Java-ws/DBLP-XML-Parser/data/output/title_year.txt</file>
+            <file>file:/C:/Data/Dropbox/Development/Java-ws/DBLP-XML-Parser/data/output_filter/year.txt</file>
+            <file>file:/C:/Data/Dropbox/Development/Java-ws/DBLP-XML-Parser/data/output_filter/title_conf.txt</file>
+            <file>file:/C:/Data/Dropbox/Development/Java-ws/DBLP-XML-Parser/src/dblp/xml/DBLPParserSecondSchema.java</file>
+            <file>file:/C:/Data/Dropbox/Development/Java-ws/DBLP-XML-Parser/src/dblp/xml/DBLPParserThirdSchema.java</file>
+            <file>file:/C:/Data/Dropbox/Development/Java-ws/DBLP-XML-Parser/data/output2/year-with-conf.txt</file>
+            <file>file:/C:/Data/Dropbox/Development/Java-ws/DBLP-XML-Parser/data/output2/title_year.txt</file>
+            <file>file:/C:/Data/Dropbox/Development/Java-ws/DBLP-XML-Parser/data/output2/author.txt</file>
+            <file>file:/C:/Data/Dropbox/Development/Java-ws/DBLP-XML-Parser/data/output2/author_conf.txt</file>
+            <file>file:/C:/Data/Dropbox/Development/Java-ws/DBLP-XML-Parser/data/output2/title_author.txt</file>
+            <file>file:/C:/Data/Dropbox/Development/Java-ws/DBLP-XML-Parser/data/output_filter2/author.txt</file>
+            <file>file:/C:/Data/Dropbox/Development/Java-ws/DBLP-XML-Parser/data/output_filter2/conf.txt</file>
+            <file>file:/C:/Data/Dropbox/Development/Java-ws/DBLP-XML-Parser/data/output_filter2/author_conf.txt</file>
+            <file>file:/C:/Data/Dropbox/Development/Java-ws/DBLP-XML-Parser/data/output_filter2/conf_year.txt</file>
+            <file>file:/C:/Data/Dropbox/Development/Java-ws/DBLP-XML-Parser/data/output_filter2/year.txt</file>
+            <file>file:/C:/Data/Dropbox/Development/Java-ws/DBLP-XML-Parser/data/output_filter2/title_year.txt</file>
+            <file>file:/C:/Data/Dropbox/Development/Java-ws/DBLP-XML-Parser/data/output2/conf_year.txt</file>
+            <file>file:/C:/Data/Dropbox/Development/Java-ws/DBLP-XML-Parser/data/output3/author.txt</file>
+            <file>file:/C:/Data/Dropbox/Development/Java-ws/DBLP-XML-Parser/data/output3/conf.txt</file>
+            <file>file:/C:/Data/Dropbox/Development/Java-ws/DBLP-XML-Parser/data/output3/conf_year.txt</file>
+            <file>file:/C:/Data/Dropbox/Development/Java-ws/DBLP-XML-Parser/data/output3/title.txt</file>
+            <file>file:/C:/Data/Dropbox/Development/Java-ws/DBLP-XML-Parser/data/output3/title_author.txt</file>
+            <file>file:/C:/Data/Dropbox/Development/Java-ws/DBLP-XML-Parser/data/output3/title_conf.txt</file>
+            <file>file:/C:/Data/Dropbox/Development/Java-ws/DBLP-XML-Parser/data/output3/year-with-conf.txt</file>
+            <file>file:/C:/Data/Dropbox/Development/Java-ws/DBLP-XML-Parser/data/output3/year.txt</file>
+            <file>file:/C:/Data/Dropbox/Development/Java-ws/DBLP-XML-Parser/data/output_filter3/author.txt</file>
+            <file>file:/C:/Data/Dropbox/Development/Java-ws/DBLP-XML-Parser/data/output_filter3/conf.txt</file>
+            <file>file:/C:/Data/Dropbox/Development/Java-ws/DBLP-XML-Parser/data/output_filter3/conf_year.txt</file>
+            <file>file:/C:/Data/Dropbox/Development/Java-ws/DBLP-XML-Parser/data/output_filter3/title.txt</file>
+            <file>file:/C:/Data/Dropbox/Development/Java-ws/DBLP-XML-Parser/data/output_filter3/title_conf.txt</file>
+            <file>file:/C:/Data/Dropbox/Development/Java-ws/DBLP-XML-Parser/data/output_filter3/title_author.txt</file>
+            <file>file:/C:/Data/Dropbox/Development/Java-ws/DBLP-XML-Parser/data/output_filter3/year.txt</file>
         </group>
     </open-files>
 </project-private>
