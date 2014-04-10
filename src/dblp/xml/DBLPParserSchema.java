@@ -147,8 +147,8 @@ public class DBLPParserSchema {
             ex.printStackTrace();
         }
     }
-    static int topAuthorCount = 500;
-    static String conf_filter_path = "data/conf.txt";
+    static int topAuthorCount = 100;
+    static String conf_filter_path = "data/conf-select.txt";
     static int year_threshold = 2005;
 
     public static void createDir(String dir) {

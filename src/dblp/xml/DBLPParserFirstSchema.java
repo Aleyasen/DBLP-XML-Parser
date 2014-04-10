@@ -29,7 +29,7 @@ public class DBLPParserFirstSchema extends DBLPParserSchema {
     static DBLPCollection yearsCollection = new DBLPCollection();
     static DBLPCollection confsCollection = new DBLPCollection();
     static DBLPCollection titlesCollection = new DBLPCollection();
-    static String outputDir = "output_y2005_schema1";
+    static String outputDir = "output_y2005_conf50_schema1";
     static String title_author_path = "data/" + outputDir + "/title_author.txt";
     static String title_conf_path = "data/" + outputDir + "/title_conf.txt";
     static String title_year_path = "data/" + outputDir + "/title_year.txt";
